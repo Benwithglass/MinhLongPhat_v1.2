@@ -20,7 +20,7 @@ function Signup() {
   const signup = async () => {
     setLoading(true)
     if (name === "" || email === "" || password === "") {
-      return toast.error("Xin hãy điền đầy đủ các thông tin.")
+      return toast.error("Xin hãy điền đầy đủ thông tin.")
     }
     
     try {
