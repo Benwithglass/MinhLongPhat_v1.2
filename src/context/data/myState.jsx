@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useEffect, useState } from 'react'
 import MyContext from './myContext'
-import { QuerySnapshot, Timestamp, addDoc, collection, onSnapshot, orderBy, query } from 'firebase/firestore';
+import { QuerySnapshot, Timestamp, addDoc, collection, deleteDoc, doc, onSnapshot, orderBy, query, setDoc } from 'firebase/firestore';
 import { fireDB } from '../../firebase/FirebaseConfig';
 import { toast } from 'react-toastify';
 
@@ -59,6 +59,11 @@ function myState(props) {
 
           await addDoc(productRef, products)
           toast.success('Sản phẩm được thêm thành công!')
+
+          setTimeout(() => {
+            window.location.href = '/dashboard'
+          }, 800);
+
           getProductData();
           setLoading(false)
 
@@ -105,9 +110,47 @@ function myState(props) {
       getProductData();
     }, []);
 
+    // update product function
+    const editHandle = (item) => {
+      setProducts(item)
+    }
+
+    const updateProduct = async () => {
+      setLoading(true)
+      try {
+
+        await setDoc(doc(fireDB, 'products', products.id), products);
+        toast.success('Cập nhật sản phẩm thành công!')
+        getProductData();
+        setTimeout(() => {
+          window.location.href = '/dashboard'
+        }, 800);
+        setLoading(false);
+      } catch (error) {
+          console.log(error);
+          setLoading(false)
+      }
+    } 
+
+    // delete product
+
+    const deleteProduct = async (item) => {
+      setLoading(true)
+      try {
+        
+        await deleteDoc(doc(fireDB, 'products', item.id));
+        toast.success('Xóa sản phẩm thành công!');
+        getProductData();
+        setLoading(false);
+      } catch (error) {
+        console.log(error);
+        setLoading(false);
+      }
+    }
+
   return (
     <MyContext.Provider value={{mode, toggleMode, loading, setLoading, 
-    products, setProducts, addProduct, product
+    products, setProducts, addProduct, product, editHandle, updateProduct, deleteProduct
     }}>
         {props.children}
     </MyContext.Provider>

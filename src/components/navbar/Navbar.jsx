@@ -83,7 +83,7 @@ function Navbar() {
                     </Link>
                   </div>
 
-                  {user?.user?.email === 'tiendatpham2412@gmail.com' ? <div className="flow-root">
+                  {user?.user?.email === 'cybersoft@gmail.com' ? <div className="flow-root">
                     <Link
                       to={"/dashboard"}
                       className="-m-2 block p-2 font-medium text-gray-900"
@@ -218,7 +218,7 @@ function Navbar() {
                     Order
                   </Link>
 
-                  {user?.user?.email === 'tiendatpham2412@gmail.com' ? 
+                  {user?.user?.email === 'cybersoft@gmail.com' ? 
 
                   <Link
                     to={"/dashboard"}
