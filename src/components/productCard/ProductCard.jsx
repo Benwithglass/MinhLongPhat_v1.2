@@ -13,7 +13,7 @@ function ProductCard() {
             className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900"
             style={{ color: mode === "dark" ? "white" : "" }}
           >
-            Our Latest Collection
+            Các dòng sản phẩm
           </h1>
           <div className="h-1 w-20 bg-pink-600 rounded"></div>
         </div>
@@ -60,14 +60,14 @@ function ProductCard() {
                     >
                       {price}
                     </p>
-                    <div className=" flex justify-center">
+                    {/* <div className=" flex justify-center">
                       <button
                         type="button"
                         className="focus:outline-none text-white bg-pink-600 hover:bg-pink-700 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm w-full  py-2"
                       >
                         Add To Cart
                       </button>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>

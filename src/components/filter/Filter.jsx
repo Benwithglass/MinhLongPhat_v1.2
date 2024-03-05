@@ -61,25 +61,34 @@ function Filter() {
                   color: mode === "dark" ? "white" : "",
                 }}
               >
-                {product.map((item) => {
+                {/* {product.map((item) => {
                   return (
                     // eslint-disable-next-line react/jsx-key
-                    <option value={item.category}>{item.category}</option>
-                  )
-                })}
-              </select>
-              {/* <select
+                    <select
                 className="px-4 py-3 w-full rounded-md bg-gray-50 border-transparent outline-0  focus:border-gray-500 focus:bg-white focus:ring-0 text-sm"
                 style={{
                   backgroundColor: mode === "dark" ? "rgb(64 66 70)" : "",
                   color: mode === "dark" ? "white" : "",
                 }}
-              >
-                <option value="100">100</option>
-                <option value="200">200</option>
-                <option value="300">300</option>
-                <option value="400">400</option>
-              </select> */}
+              > */}
+                    <option value="dây đai">Dây đai</option>
+                    <option value="pallet">Pallet</option>
+                    <option value="khác">Khác</option>
+              </select>
+             {/* )} */}
+
+               {/* <select
+              //   className="px-4 py-3 w-full rounded-md bg-gray-50 border-transparent outline-0  focus:border-gray-500 focus:bg-white focus:ring-0 text-sm"
+              //   style={{
+              //     backgroundColor: mode === "dark" ? "rgb(64 66 70)" : "",
+              //     color: mode === "dark" ? "white" : "",
+              //   }}
+              // >
+              //   <option value="100">100</option>
+              //   <option value="200">200</option>
+              //   <option value="300">300</option>
+              //   <option value="400">400</option>
+              // </select> */}
             </div>
           </div>
         </div>
