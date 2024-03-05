@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useEffect, useState } from 'react'
 import MyContext from './myContext'
-import { QuerySnapshot, Timestamp, addDoc, collection, deleteDoc, doc, onSnapshot, orderBy, query, setDoc } from 'firebase/firestore';
+import {Timestamp, addDoc, collection, deleteDoc, doc, getDocs, onSnapshot, orderBy, query, setDoc } from 'firebase/firestore';
 import { fireDB } from '../../firebase/FirebaseConfig';
 import { toast } from 'react-toastify';
 
@@ -105,11 +105,6 @@ function myState(props) {
 
     }
 
-    // eslint-disable-next-line react-hooks/rules-of-hooks
-    useEffect(() => {
-      getProductData();
-    }, []);
-
     // update product function
     const editHandle = (item) => {
       setProducts(item)
@@ -133,7 +128,6 @@ function myState(props) {
     } 
 
     // delete product
-
     const deleteProduct = async (item) => {
       setLoading(true)
       try {
@@ -148,9 +142,46 @@ function myState(props) {
       }
     }
 
+    //get user data
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    const [user, setUser] = useState([])
+
+    const getUserData = async () => {
+      setLoading(true)
+        try { 
+
+          const result = await getDocs(collection(fireDB, 'user'))
+          const usersArray = [];
+          result.forEach((doc) => {
+            usersArray.push(doc.data());
+            setLoading(false)
+          });
+          setUser(usersArray);
+          setLoading(false)
+          
+        } catch (error) {
+          console.log(error)
+          setLoading(false)
+        }
+
+    }
+
+    
+      // eslint-disable-next-line react-hooks/rules-of-hooks
+      useEffect(() => {
+        getProductData();
+        getUserData();
+      }, []);
+
+      // eslint-disable-next-line react-hooks/rules-of-hooks
+      const [searchkey, setSearchkey] = useState('')
+      // eslint-disable-next-line react-hooks/rules-of-hooks
+      const [filterType, setFilterType] = useState('')
+      // const [filterPrice, setFilterPrice] = useState('')
+
   return (
     <MyContext.Provider value={{mode, toggleMode, loading, setLoading, 
-    products, setProducts, addProduct, product, editHandle, updateProduct, deleteProduct
+    products, setProducts, addProduct, product, editHandle, updateProduct, deleteProduct, user, searchkey, setSearchkey, filterType, setFilterType
     }}>
         {props.children}
     </MyContext.Provider>

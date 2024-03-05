@@ -11,6 +11,7 @@ import Loader from "../../components/loader/Loader";
 function Signup() {
 
   const [name, setName] = useState("");
+  // const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -30,6 +31,7 @@ function Signup() {
 
       const user = {
         name: name,
+        // phone: users.user.phone,
         uid: users.user.uid,
         email: users.user.email,
         time: Timestamp.now()
@@ -39,6 +41,7 @@ function Signup() {
       await addDoc(userRef, user)
       toast.success("Đăng ký thành công!")
       setName("");
+      // setPhone("");
       setEmail("");
       setPassword("");
       setLoading(false)
@@ -66,9 +69,19 @@ function Signup() {
             onChange={(e) => setName(e.target.value)}
             name="name"
             className=" bg-gray-600 mb-4 px-2 py-2 w-full lg:w-[20em] rounded-lg text-white placeholder:text-gray-200 outline-none"
-            placeholder="Company name"
+            placeholder="Tên công ty"
           />
         </div>
+        {/* <div>
+          <input
+            type="text"
+            value={phone}
+            onChange={(e) => setPhone(e.target.value)}
+            name="phone"
+            className=" bg-gray-600 mb-4 px-2 py-2 w-full lg:w-[20em] rounded-lg text-white placeholder:text-gray-200 outline-none"
+            placeholder="Điện thoại liên lạc"
+          />
+        </div> */}
         <div>
           <input
             type="email"
