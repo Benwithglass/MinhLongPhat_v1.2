@@ -191,12 +191,13 @@ function Navbar() {
               <div className="ml-4 flex lg:ml-0">
                 <Link to={"/"} className="flex">
                   <div className="flex ">
-                    <h1
+                    {/* <h1
                       className=" text-2xl font-bold text-black  px-2 py-1 rounded"
                       style={{ color: mode === "dark" ? "white" : "" }}
                     >
                       LOGO
-                    </h1>
+                    </h1> */}
+                    <img src="https://i.ibb.co/Bfr6zxs/logo-minhlongphat.png" alt="logo_minhlongphat" width={120} />
                   </div>
                 </Link>
               </div>
@@ -210,13 +211,13 @@ function Navbar() {
                   >
                     All Products
                   </Link>
-                  <Link
+                  {/* <Link
                     to={"/order"}
                     className="text-sm font-medium text-gray-700 "
                     style={{ color: mode === "dark" ? "white" : "" }}
                   >
                     Order
-                  </Link>
+                  </Link> */}
 
                   {user?.user?.email === 'minhlongphat2020@gmail.com' ? 
 
@@ -252,7 +253,7 @@ function Navbar() {
                     </span>
                   </a>
                 </div> */}
-                <div className="hidden lg:ml-8 lg:flex">
+                {/* <div className="hidden lg:ml-8 lg:flex">
                   <a href="#" className="flex items-center text-gray-700 ">
                     <img
                       className="inline-block w-10 h-10 rounded-full"
@@ -260,7 +261,7 @@ function Navbar() {
                       alt="Dan_Abromov"
                     />
                   </a>
-                </div>
+                </div> */}
 
                 {/* Search */}
                 <div className="flex lg:ml-6">
@@ -277,7 +278,7 @@ function Navbar() {
                 </div>
 
                 {/* Cart */}
-                <div className="ml-4 flow-root lg:ml-6">
+                {/* <div className="ml-4 flow-root lg:ml-6">
                   <Link
                     to={"/cart"}
                     className="group -m-2 flex items-center p-2"
@@ -306,7 +307,7 @@ function Navbar() {
                     </span>
                     <span className="sr-only">items in cart, view bag</span>
                   </Link>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

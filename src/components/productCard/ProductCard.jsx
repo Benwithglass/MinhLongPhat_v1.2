@@ -41,12 +41,12 @@ function ProductCard() {
                     />
                   </div>
                   <div className="p-5 border-t-2">
-                    <h2
+                    {/* <h2
                       className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1"
                       style={{ color: mode === "dark" ? "white" : "" }}
                     >
                       E-Bharat
-                    </h2>
+                    </h2> */}
                     <h1
                       className="title-font text-lg font-medium text-gray-900 mb-3"
                       style={{ color: mode === "dark" ? "white" : "" }}

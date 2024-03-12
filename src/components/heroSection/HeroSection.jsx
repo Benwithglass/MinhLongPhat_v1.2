@@ -1,10 +1,14 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react'
+import Hinh_banner_2 from '../../assets/Hinh_banner_2.png'
 
 function HeroSection() {
   return (
-    <div>
-        <img src="https://static.vecteezy.com/system/resources/previews/004/299/835/original/online-shopping-on-phone-buy-sell-business-digital-web-banner-application-money-advertising-payment-ecommerce-illustration-search-free-vector.jpg" alt="" />
+    <div className='flex justify-center mt-5'>
+        <img 
+        width={1250}
+        src={Hinh_banner_2} 
+        alt="Banner_MLP" />
     </div>
   )
 }

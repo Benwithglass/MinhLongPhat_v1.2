@@ -4,7 +4,7 @@ import myContext from "../../context/data/myContext";
 
 function Filter() {
   const context = useContext(myContext);
-  const { mode, searchkey, setSearchkey, filterType, setFilterType, product } = context;
+  const { mode, searchkey, setSearchkey, filterType, setFilterType } = context;
 
   return (
     <div>
@@ -33,7 +33,7 @@ function Filter() {
               value={searchkey}
               onChange={(e) => setSearchkey(e.target.value)}
               id="searchkey"
-              placeholder="Search here"
+              placeholder="Tìm sản phẩm... "
               className="px-8 py-3 w-full rounded-md bg-violet-0 border-transparent outline-0 text-sm"
               style={{
                 backgroundColor: mode === "dark" ? "rgb(64 66 70)" : "",
@@ -42,7 +42,7 @@ function Filter() {
             />
           </div>
           <div className="flex items-center justify-between mt-4">
-            <p className="font-medium">Filters</p>
+            <p className="font-medium">Lọc tìm kiếm</p>
             <button
               className="px-4 py-2 bg-gray-50hover:bg-gray-200 text-gray-800 text-sm font-medium rounded-md"
               style={{ color: mode === "dark" ? "white" : "" }}

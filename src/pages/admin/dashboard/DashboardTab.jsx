@@ -11,15 +11,15 @@ import { Timestamp } from "firebase/firestore";
 function DashboardTab() {
   const context = useContext(myContext);
   const { mode, product, editHandle, deleteProduct, user} = context;
-  let [isOpen, setIsOpen] = useState(false);
+  // let [isOpen, setIsOpen] = useState(false);
 
-  function closeModal() {
-    setIsOpen(false);
-  }
+  // function closeModal() {
+  //   setIsOpen(false);
+  // }
 
-  function openModal() {
-    setIsOpen(true);
-  }
+  // function openModal() {
+  //   setIsOpen(true);
+  // }
 
   const add = () => {
     window.location.href = "/addproduct";
