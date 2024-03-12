@@ -17,87 +17,67 @@ export default function Footer() {
     >
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-wrap md:text-left text-center order-first">
-          <div className="lg:w-1/4 md:w-1/2 w-full px-4">
+          <div className="lg:w-1/3 md:w-1/2 w-full px-4 mr-12">
             <h2
-              className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3"
+              className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3 underline underline-offset-4"
               style={{ color: mode === "dark" ? "white" : "" }}
             >
-              CATEGORIES
+              THÔNG TIN LIÊN HỆ
             </h2>
             <nav className="list-none mb-10">
               <li>
-                <a
-                  className="text-gray-600 hover:text-gray-800"
-                  style={{ color: mode === "dark" ? "white" : "" }}
-                >
-                  Home
-                </a>
+                <p 
+                style={{ color: mode === "dark" ? "white" : "" }}
+                className="mb-4">CÔNG TY TNHH ĐẦU TƯ VÀ PHÁT TRIỂN MINH LONG PHÁT</p>
               </li>
               <li>
-                <a
-                  className="text-gray-600 hover:text-gray-800"
-                  style={{ color: mode === "dark" ? "white" : "" }}
-                >
-                  Order
-                </a>
+                <p 
+                style={{ color: mode === "dark" ? "white" : "" }}
+                className="mb-4">Đ/C: 72, Đường N14, KP7, Phường Thống Nhất, Thành phố Biên Hòa, Đồng Nai, Việt Nam</p>
               </li>
               <li>
-                <a
-                  className="text-gray-600 hover:text-gray-800"
-                  style={{ color: mode === "dark" ? "white" : "" }}
-                >
-                  Local For Vocal
-                </a>
+                <p 
+                style={{ color: mode === "dark" ? "white" : "" }}
+                className="mb-4">Hotline: 09-8832-9000</p>
               </li>
               <li>
-                <a
-                  className="text-gray-600 hover:text-gray-800"
-                  style={{ color: mode === "dark" ? "white" : "" }}
-                >
-                  Cart
-                </a>
+                <p>Email: minhlongphat2020@gmail.com</p>
               </li>
             </nav>
           </div>
-          <div className="lg:w-1/4 md:w-1/2 w-full px-4">
+          <div className="lg:w-1/4 md:w-1/2 w-full px-4 mr-12">
             <h2
-              className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3 uppercase"
+              className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3 uppercase underline underline-offset-4"
               style={{ color: mode === "dark" ? "white" : "" }}
             >
-              Customer Service
+              SẢN PHẨM
             </h2>
             <nav className="list-none mb-10">
               <li>
-                <Link
-                  to={"/returnpolicy"}
-                  className="text-gray-600 hover:text-gray-800"
-                  style={{ color: mode === "dark" ? "white" : "" }}
-                >
-                  Return Policy
-                </Link>
+                <p 
+                style={{ color: mode === "dark" ? "white" : "" }}
+                className="mb-4">. DÂY ĐAI</p>
               </li>
               <li>
-                <Link
-                  to={"/about"}
-                  className="text-gray-600 hover:text-gray-800"
-                  style={{ color: mode === "dark" ? "white" : "" }}
-                >
-                  About
-                </Link>
+                <p 
+                style={{ color: mode === "dark" ? "white" : "" }}
+                className="mb-4">. PALLET GỖ</p>
               </li>
               <li>
-                <Link
-                  to={"/contact"}
-                  className="text-gray-600 hover:text-gray-800"
-                  style={{ color: mode === "dark" ? "white" : "" }}
-                >
-                  Contact Us
-                </Link>
+                <p 
+                style={{ color: mode === "dark" ? "white" : "" }}
+                className="mb-4">. MÀNG PE</p>
               </li>
+              <li>
+                <p 
+                style={{ color: mode === "dark" ? "white" : "" }}
+                className="mb-4">. KHÁC</p>
+              </li>
+
             </nav>
           </div>
 
-          <div className="lg:w-1/4 md:w-1/2 w-full px-4">
+          {/* <div className="lg:w-1/4 md:w-1/2 w-full px-4">
             <h2
               className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3"
               style={{ color: mode === "dark" ? "white" : "" }}
@@ -118,7 +98,7 @@ export default function Footer() {
           </div>
           <div className="lg:w-1/4 md:w-1/2 w-full px-4">
             <img src="https://ecommerce-sk.vercel.app/pay.png" alt="" />
-          </div>
+          </div> */}
         </div>
       </div>
 
@@ -129,14 +109,14 @@ export default function Footer() {
           color: mode === "dark" ? "white" : "",
         }}
       >
-        {/* <div className="container px-5 py-3 mx-auto flex items-center sm:flex-row flex-col">
+        <div className="container px-5 py-3 mx-auto flex items-center sm:flex-row flex-col">
           <Link to={"/"} className="flex">
             <div className="flex ">
               <h1
                 className=" text-2xl font-bold text-black  px-2 py-1 rounded"
                 style={{ color: mode === "dark" ? "white" : "" }}
               >
-                E-Bharat
+                Minh Long Phát
               </h1>
             </div>
           </Link>
@@ -144,7 +124,7 @@ export default function Footer() {
             className="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4"
             style={{ color: mode === "dark" ? "white" : "" }}
           >
-            © 2023 E-bharat —
+            © 2024 copyright reserved - 
             <a
               href="https://twitter.com/knyttneve"
               rel="noopener noreferrer"
@@ -152,10 +132,10 @@ export default function Footer() {
               target="_blank"
               style={{ color: mode === "dark" ? "white" : "" }}
             >
-              www.ebharat.com
+              www.minhlongphat.com
             </a>
           </p>
-          <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+          {/* <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
             <a className="text-gray-500">
               <svg
                 fill="currentColor"
@@ -211,8 +191,13 @@ export default function Footer() {
                 <circle cx={4} cy={4} r={2} stroke="none" />
               </svg>
             </a>
-          </span>
-        </div> */}
+          </span> */}
+          <img 
+          className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start"
+          src="https://i.ibb.co/Bfr6zxs/logo-minhlongphat.png" 
+          width={150}
+          alt="minhlongphat_logo" />
+        </div>
       </div>
     </footer>
   );
