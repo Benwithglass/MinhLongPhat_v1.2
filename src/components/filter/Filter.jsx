@@ -73,6 +73,7 @@ function Filter() {
               > */}
                     <option value="dây đai">Dây đai</option>
                     <option value="pallet">Pallet</option>
+                    <option value="pe">Màng PE</option>
                     <option value="khác">Khác</option>
               </select>
              {/* )} */}

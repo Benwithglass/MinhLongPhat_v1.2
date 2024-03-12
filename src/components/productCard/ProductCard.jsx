@@ -28,7 +28,7 @@ function ProductCard() {
         <div className="product_placement flex">
           {/* ô filter */}
 
-          <div className="filter_button lg:w-1/4">
+          <div className="filter_button w-80">
             <FormControl>
               <FormLabel
                 style={{ color: mode === "dark" ? "white" : "" }}
@@ -53,6 +53,12 @@ function ProductCard() {
                   value="pallet"
                   control={<Radio />}
                   label="Pallet"
+                />
+                <FormControlLabel
+                  style={{ color: mode === "dark" ? "white" : "" }}
+                  value="pe"
+                  control={<Radio />}
+                  label="Màng PE"
                 />
                 <FormControlLabel
                   style={{ color: mode === "dark" ? "white" : "" }}
