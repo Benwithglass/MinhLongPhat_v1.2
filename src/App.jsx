@@ -13,6 +13,7 @@ import AddProduct from "./pages/admin/pages/AddProduct";
 import UpdateProduct from "./pages/admin/pages/UpdateProduct";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import AllProducts from "./pages/allproducts/AllProducts";
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
           } />
           <Route path="/login" element={<Login/>} />
           <Route path="/signup" element={<Signup/>} />
+          <Route path="/allproducts" element={<AllProducts/>} />
           <Route path="/productinfo/:id" element={<ProductInfo/>} />
           <Route path="/addproduct" element={
             <ProtectedRouteForAdmin>

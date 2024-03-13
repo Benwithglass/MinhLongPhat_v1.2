@@ -205,11 +205,18 @@ function Navbar() {
               <div className="ml-auto flex items-center">
                 <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
                   <Link
+                    to={"/"}
+                    className="text-sm font-medium text-gray-700 "
+                    style={{ color: mode === "dark" ? "white" : "" }}
+                  >
+                    Trang Chủ
+                  </Link>
+                  <Link
                     to={"/allproducts"}
                     className="text-sm font-medium text-gray-700 "
                     style={{ color: mode === "dark" ? "white" : "" }}
                   >
-                    All Products
+                    Sản Phẩm
                   </Link>
                   {/* <Link
                     to={"/order"}
@@ -234,7 +241,7 @@ function Navbar() {
                     className="text-sm font-medium text-gray-700 cursor-pointer  "
                     style={{ color: mode === "dark" ? "white" : "" }}
                   >
-                    Logout
+                    Đăng xuất
                   </a> : ""}
                 </div>
 
