@@ -206,17 +206,45 @@ function Navbar() {
                 <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
                   <Link
                     to={"/"}
-                    className="text-sm font-medium text-gray-700 "
+                    className="text-sm font-medium text-gray-700 hover:underline underline-offset-2"
                     style={{ color: mode === "dark" ? "white" : "" }}
                   >
-                    Trang Chủ
+                    Trang Chủ |
+                  </Link>
+                  <Link
+                    to={"/vechungtoi"}
+                    className="text-sm font-medium text-gray-700 hover:underline underline-offset-2"
+                    style={{ color: mode === "dark" ? "white" : "" }}
+                  >
+                    Về Chúng Tôi |
                   </Link>
                   <Link
                     to={"/allproducts"}
-                    className="text-sm font-medium text-gray-700 "
+                    className="text-sm font-medium text-gray-700 hover:underline underline-offset-2"
                     style={{ color: mode === "dark" ? "white" : "" }}
                   >
-                    Sản Phẩm
+                    Sản Phẩm |
+                  </Link>
+                  <Link
+                    to={"/thongtin"}
+                    className="text-sm font-medium text-gray-700 hover:underline underline-offset-2"
+                    style={{ color: mode === "dark" ? "white" : "" }}
+                  >
+                    Thông Tin |
+                  </Link>
+                  <Link
+                    to={"/tuyendung"}
+                    className="text-sm font-medium text-gray-700 hover:underline underline-offset-2"
+                    style={{ color: mode === "dark" ? "white" : "" }}
+                  >
+                    Tuyển Dụng |
+                  </Link>
+                  <Link
+                    to={"/lienhe"}
+                    className="text-sm font-medium text-gray-700 hover:underline underline-offset-2"
+                    style={{ color: mode === "dark" ? "white" : "" }}
+                  >
+                    Liên Hệ |
                   </Link>
                   {/* <Link
                     to={"/order"}
@@ -233,7 +261,7 @@ function Navbar() {
                     className="text-sm font-medium text-gray-700 "
                     style={{ color: mode === "dark" ? "white" : "" }}
                   >
-                    Admin
+                    Admin |
                   </Link> : ""}
 
                   {user ? <a

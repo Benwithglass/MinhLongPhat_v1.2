@@ -14,6 +14,10 @@ import UpdateProduct from "./pages/admin/pages/UpdateProduct";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import AllProducts from "./pages/allproducts/AllProducts";
+import Introruction from "./pages/introduction/Introruction";
+import Information from "./pages/information/Information";
+import Recruit from "./pages/recruit/Recruit";
+import Contact from "./pages/contact/Contact";
 
 
 function App() {
@@ -22,6 +26,10 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/vechungtoi" element={<Introruction/>} />
+          <Route path="/thongtin" element={<Information/>} />
+          <Route path="/tuyendung" element={<Recruit/>} />
+          <Route path="/lienhe" element={<Contact/>} />
           <Route path="/dashboard" element={
             <ProtectedRouteForAdmin>
               <Dashboard/>

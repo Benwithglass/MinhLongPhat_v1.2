@@ -9,7 +9,7 @@ export default function Footer() {
   const { mode } = context;
   return (
     <footer
-      className="text-gray-600 body-font bg-gray-300"
+      className="text-gray-600 body-font bg-orange-200"
       style={{
         backgroundColor: mode === "dark" ? "rgb(46 49 55)" : "",
         color: mode === "dark" ? "white" : "",
@@ -103,7 +103,7 @@ export default function Footer() {
       </div>
 
       <div
-        className="bg-gray-200"
+        className="bg-orange-100"
         style={{
           backgroundColor: mode === "dark" ? "rgb(55 57 61)" : "",
           color: mode === "dark" ? "white" : "",
