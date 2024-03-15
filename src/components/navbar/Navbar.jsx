@@ -140,7 +140,7 @@ function Navbar() {
       </Transition.Root>
 
       {/* desktop */}
-      <header className="relative bg-white">
+      <header className="relative bg-orange-100">
         {/* <p
           className="flex h-10 items-center justify-center bg-pink-600 px-4 text-sm font-medium text-white sm:px-6 lg:px-8"
           style={{
@@ -153,7 +153,7 @@ function Navbar() {
 
         <nav
           aria-label="Top"
-          className="bg-gray-100 px-4 sm:px-6 lg:px-8 shadow-xl "
+          className="bg-orange-100 px-4 sm:px-6 lg:px-8 shadow-xl "
           style={{
             backgroundColor: mode === "dark" ? "#282c34" : "",
             color: mode === "dark" ? "white" : "",

@@ -100,7 +100,7 @@ function Carousel() {
         </h1>
       </div>
       {/* Dây Đai */}
-      <div className="background bg-orange-400 pt-10" ref={bgRef_1}>
+      <div className="background bg-orange-200 pt-10" ref={bgRef_1}>
         <div className="container mx-auto w-full mb-2 lg:mb-3 ">
           <h1
             className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900"
@@ -469,7 +469,7 @@ function Carousel() {
       {/* Pallet */}
 
       {/* Màng PE */}
-      <div className="background bg-orange-400 pt-14" ref={bgRef_3}>
+      <div className="background bg-orange-200 pt-14" ref={bgRef_3}>
         <div className="container mx-auto w-full mb-2 lg:mb-3 ">
           <h1
             className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900"
