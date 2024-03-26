@@ -69,6 +69,61 @@ function AddProduct() {
               placeholder="Product description"
             ></textarea>
           </div>
+          <div>
+            <textarea
+              cols="30"
+              rows="10"
+              name="Xuất xứ"
+              value={products.xuatXu}
+              onChange={(e) => setProducts({...products, description: e.target.value})}
+              className=" bg-gray-600 mb-4 px-2 py-2 w-full lg:w-[20em] rounded-lg text-white placeholder:text-gray-200 outline-none"
+              placeholder="Xuất xứ"
+            ></textarea>
+          </div>
+          <div>
+            <textarea
+              cols="30"
+              rows="10"
+              name="Khối lượng"
+              value={products.khoiLuong}
+              onChange={(e) => setProducts({...products, description: e.target.value})}
+              className=" bg-gray-600 mb-4 px-2 py-2 w-full lg:w-[20em] rounded-lg text-white placeholder:text-gray-200 outline-none"
+              placeholder="Khối lượng"
+            ></textarea>
+          </div>
+          <div>
+            <textarea
+              cols="30"
+              rows="10"
+              name="Độ dày"
+              value={products.doDay}
+              onChange={(e) => setProducts({...products, description: e.target.value})}
+              className=" bg-gray-600 mb-4 px-2 py-2 w-full lg:w-[20em] rounded-lg text-white placeholder:text-gray-200 outline-none"
+              placeholder="Độ dày"
+            ></textarea>
+          </div>
+          <div>
+            <textarea
+              cols="30"
+              rows="10"
+              name="Chiều rộng"
+              value={products.chieuRong}
+              onChange={(e) => setProducts({...products, description: e.target.value})}
+              className=" bg-gray-600 mb-4 px-2 py-2 w-full lg:w-[20em] rounded-lg text-white placeholder:text-gray-200 outline-none"
+              placeholder="Chiều rộng"
+            ></textarea>
+          </div>
+          <div>
+            <textarea
+              cols="30"
+              rows="10"
+              name="Màu sắc"
+              value={products.mauSac}
+              onChange={(e) => setProducts({...products, description: e.target.value})}
+              className=" bg-gray-600 mb-4 px-2 py-2 w-full lg:w-[20em] rounded-lg text-white placeholder:text-gray-200 outline-none"
+              placeholder="Màu sắc"
+            ></textarea>
+          </div>
           <div className=" flex justify-center mb-3">
             <button 
             onClick={addProduct}

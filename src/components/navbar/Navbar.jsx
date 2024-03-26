@@ -5,9 +5,12 @@ import { BsFillCloudSunFill } from "react-icons/bs";
 import { FiSun } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import { Dialog, Transition } from '@headlessui/react';
-import { RxCross2 } from 'react-icons/rx'
+import { RxCross2 } from 'react-icons/rx';
+import "./Navbar.css"
 
 function Navbar() {
+
+
   const context = useContext(myContext);
   const { mode, toggleMode } = context;
 
@@ -140,7 +143,7 @@ function Navbar() {
       </Transition.Root>
 
       {/* desktop */}
-      <header className="relative bg-orange-100">
+      <header className="relative">
         {/* <p
           className="flex h-10 items-center justify-center bg-pink-600 px-4 text-sm font-medium text-white sm:px-6 lg:px-8"
           style={{
@@ -153,7 +156,7 @@ function Navbar() {
 
         <nav
           aria-label="Top"
-          className="bg-orange-100 px-4 sm:px-6 lg:px-8 shadow-xl "
+          className="px-4 sm:px-6 lg:px-8 border-b-2 border-gray-300"
           style={{
             backgroundColor: mode === "dark" ? "#282c34" : "",
             color: mode === "dark" ? "white" : "",
@@ -212,7 +215,14 @@ function Navbar() {
                     Trang Chủ |
                   </Link>
                   <Link
-                    to={"/vechungtoi"}
+                    // to={"/vechungtoi"}
+                    onClick={(event) => {
+                      event.preventDefault;
+                      const element = document.getElementById("vechungtoi");
+                      element.scrollIntoView({
+                        behavior: "smooth",
+                      });
+                    }}
                     className="text-sm font-medium text-gray-700 hover:underline underline-offset-2"
                     style={{ color: mode === "dark" ? "white" : "" }}
                   >
@@ -220,6 +230,7 @@ function Navbar() {
                   </Link>
                   <Link
                     to={"/allproducts"}
+                    
                     className="text-sm font-medium text-gray-700 hover:underline underline-offset-2"
                     style={{ color: mode === "dark" ? "white" : "" }}
                   >

@@ -90,7 +90,7 @@ function Carousel() {
   }, []);
 
   return (
-    <div className=" py-6 md:py-8 mx-auto mt-8 bg-orange-300" >
+    <div className=" py-6 md:py-8 mx-auto bg-orange-300 scroll-smooth" >
       <div className="mx-auto lg:w-fit w-fit mb-2 lg:mb-10">
         <h1
           className="sm:text-5xl text-2xl text-center font-medium title-font mb-2 text-gray-700"
@@ -100,7 +100,7 @@ function Carousel() {
         </h1>
       </div>
       {/* Dây Đai */}
-      <div className="background bg-orange-200 pt-10" ref={bgRef_1}>
+      <div className="background bg-orange-300 hover:bg-orange-200 transition ease-in-out duration-500 pt-10" ref={bgRef_1} id="daydai">
         <div className="container mx-auto w-full mb-2 lg:mb-3 ">
           <h1
             className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900"
@@ -281,11 +281,166 @@ function Carousel() {
           </div>
         </Slider>
       </div>
-
       {/* Dây Đai */}
 
+      {/* Màng PE */}
+      <div className="background bg-orange-300 hover:bg-orange-200 transition ease-in-out duration-500 pt-14" ref={bgRef_2}>
+        <div className="container mx-auto w-full mb-2 lg:mb-3 ">
+          <h1
+            className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900"
+            style={{ color: mode === "dark" ? "white" : "" }}
+          >
+            Màng PE
+          </h1>
+          <div className="h-1 w-20 bg-pink-600 rounded"></div>
+        </div>
+        <Slider {...settings} className="container mx-auto">
+          {/* item_1 */}
+          <div className="mb-14">
+            <Link to={"/allproducts"}>
+              <div
+                className="h-full rounded-2xl overflow-hidden"
+                style={{
+                  backgroundColor: mode === "dark" ? "rgb(46 49 55)" : "",
+                  color: mode === "dark" ? "white" : "",
+                }}
+              >
+                <div className="flex justify-center cursor-pointer">
+                  <img
+                    className=" rounded-2xl w-full h-80 p-2 hover:scale-110 transition-scale-110  duration-300 ease-in-out"
+                    src="https://tuigoihang.vn/wp-content/uploads/2023/02/mang-chit-pe-trang-25cm-gia-si.jpg"
+                    alt="pe"
+                  />
+                </div>
+                <div className="p-5">
+                  <h1
+                    className="title-font text-center text-lg font-medium text-gray-900 mb-3"
+                    style={{ color: mode === "dark" ? "white" : "" }}
+                  >
+                    PE Màng Chít
+                  </h1>
+                </div>
+              </div>
+            </Link>
+          </div>
+          {/* item_2 */}
+          <div className="mb-14">
+            <Link to={"/allproducts"}>
+              <div
+                className="h-full rounded-2xl overflow-hidden"
+                style={{
+                  backgroundColor: mode === "dark" ? "rgb(46 49 55)" : "",
+                  color: mode === "dark" ? "white" : "",
+                }}
+              >
+                <div className="flex justify-center cursor-pointer">
+                  <img
+                    className=" rounded-2xl w-full h-80 p-2 hover:scale-110 transition-scale-110  duration-300 ease-in-out"
+                    src="https://maxwellvn.com/wp-content/uploads/2020/09/h%C3%ACnh-2-8.jpg"
+                    alt="pe"
+                  />
+                </div>
+                <div className="p-5">
+                  <h1
+                    className="title-font text-center text-lg font-medium text-gray-900 mb-3"
+                    style={{ color: mode === "dark" ? "white" : "" }}
+                  >
+                    PE Đỏ
+                  </h1>
+                </div>
+              </div>
+            </Link>
+          </div>
+          {/* item_3 */}
+          <div className="mb-14">
+            <Link to={"/allproducts"}>
+              <div
+                className="h-full rounded-2xl overflow-hidden"
+                style={{
+                  backgroundColor: mode === "dark" ? "rgb(46 49 55)" : "",
+                  color: mode === "dark" ? "white" : "",
+                }}
+              >
+                <div className="flex justify-center cursor-pointer">
+                  <img
+                    className=" rounded-2xl w-full h-80 p-2 hover:scale-110 transition-scale-110  duration-300 ease-in-out"
+                    src="https://minhkhoipvc.com/wp-content/uploads/2023/09/mang-pe-mau-den-35kg-boc-hang-tai-ha-noi-1.jpg"
+                    alt="pe"
+                  />
+                </div>
+                <div className="p-5">
+                  <h1
+                    className="title-font text-center text-lg font-medium text-gray-900 mb-3"
+                    style={{ color: mode === "dark" ? "white" : "" }}
+                  >
+                    PE Đen
+                  </h1>
+                </div>
+              </div>
+            </Link>
+          </div>
+          {/* item_4 */}
+          <div className="mb-14">
+            <Link to={"/allproducts"}>
+              <div
+                className="h-full rounded-2xl overflow-hidden"
+                style={{
+                  backgroundColor: mode === "dark" ? "rgb(46 49 55)" : "",
+                  color: mode === "dark" ? "white" : "",
+                }}
+              >
+                <div className="flex justify-center cursor-pointer">
+                  <img
+                    className=" rounded-2xl w-full h-80 p-2 hover:scale-110 transition-scale-110  duration-300 ease-in-out"
+                    src="https://bizweb.dktcdn.net/thumb/1024x1024/100/429/571/products/tantaiplastics-com-mang-pe-lot-san-3.jpg?v=1626081495557"
+                    alt="pallet"
+                  />
+                </div>
+                <div className="p-5">
+                  <h1
+                    className="title-font text-center text-lg font-medium text-gray-900 mb-3"
+                    style={{ color: mode === "dark" ? "white" : "" }}
+                  >
+                    PE Trải Sàn
+                  </h1>
+                </div>
+              </div>
+            </Link>
+          </div>
+          {/* item_5 */}
+          <div className="mb-14">
+            <Link to={"/allproducts"}>
+              <div
+                className="h-full rounded-2xl overflow-hidden"
+                style={{
+                  backgroundColor: mode === "dark" ? "rgb(46 49 55)" : "",
+                  color: mode === "dark" ? "white" : "",
+                }}
+              >
+                <div className="flex justify-center cursor-pointer">
+                  <img
+                    className=" rounded-2xl w-full h-80 p-2 hover:scale-110 transition-scale-110  duration-300 ease-in-out"
+                    src="https://tcstar.com.vn/images/stories/virtuemart/product/dm_20230403113227_001.jpg"
+                    alt="dây đai"
+                  />
+                </div>
+                <div className="p-5">
+                  <h1
+                    className="title-font text-center text-lg font-medium text-gray-900 mb-3"
+                    style={{ color: mode === "dark" ? "white" : "" }}
+                  >
+                    PE Xanh
+                  </h1>
+                </div>
+              </div>
+            </Link>
+          </div>
+        </Slider>
+      </div>
+      {/* Màng PE */}
+
       {/* Pallet */}
-      <div className="background mb-7" ref={bgRef_2}>
+      <div className="background bg-orange-300 hover:bg-orange-200 transition ease-in-out duration-500 mb-7" ref={bgRef_3} id="pallet">
         <div className="container mx-auto w-full mb-2 lg:mb-3 mt-14">
           <h1
             className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900"
@@ -468,164 +623,8 @@ function Carousel() {
       </div>
       {/* Pallet */}
 
-      {/* Màng PE */}
-      <div className="background bg-orange-200 pt-14" ref={bgRef_3}>
-        <div className="container mx-auto w-full mb-2 lg:mb-3 ">
-          <h1
-            className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900"
-            style={{ color: mode === "dark" ? "white" : "" }}
-          >
-            Màng PE
-          </h1>
-          <div className="h-1 w-20 bg-pink-600 rounded"></div>
-        </div>
-        <Slider {...settings} className="container mx-auto">
-          {/* item_1 */}
-          <div className="mb-14">
-            <Link to={"/allproducts"}>
-              <div
-                className="h-full rounded-2xl overflow-hidden"
-                style={{
-                  backgroundColor: mode === "dark" ? "rgb(46 49 55)" : "",
-                  color: mode === "dark" ? "white" : "",
-                }}
-              >
-                <div className="flex justify-center cursor-pointer">
-                  <img
-                    className=" rounded-2xl w-full h-80 p-2 hover:scale-110 transition-scale-110  duration-300 ease-in-out"
-                    src="https://tuigoihang.vn/wp-content/uploads/2023/02/mang-chit-pe-trang-25cm-gia-si.jpg"
-                    alt="pe"
-                  />
-                </div>
-                <div className="p-5">
-                  <h1
-                    className="title-font text-center text-lg font-medium text-gray-900 mb-3"
-                    style={{ color: mode === "dark" ? "white" : "" }}
-                  >
-                    PE Màng Chít
-                  </h1>
-                </div>
-              </div>
-            </Link>
-          </div>
-          {/* item_2 */}
-          <div className="mb-14">
-            <Link to={"/allproducts"}>
-              <div
-                className="h-full rounded-2xl overflow-hidden"
-                style={{
-                  backgroundColor: mode === "dark" ? "rgb(46 49 55)" : "",
-                  color: mode === "dark" ? "white" : "",
-                }}
-              >
-                <div className="flex justify-center cursor-pointer">
-                  <img
-                    className=" rounded-2xl w-full h-80 p-2 hover:scale-110 transition-scale-110  duration-300 ease-in-out"
-                    src="https://maxwellvn.com/wp-content/uploads/2020/09/h%C3%ACnh-2-8.jpg"
-                    alt="pe"
-                  />
-                </div>
-                <div className="p-5">
-                  <h1
-                    className="title-font text-center text-lg font-medium text-gray-900 mb-3"
-                    style={{ color: mode === "dark" ? "white" : "" }}
-                  >
-                    PE Đỏ
-                  </h1>
-                </div>
-              </div>
-            </Link>
-          </div>
-          {/* item_3 */}
-          <div className="mb-14">
-            <Link to={"/allproducts"}>
-              <div
-                className="h-full rounded-2xl overflow-hidden"
-                style={{
-                  backgroundColor: mode === "dark" ? "rgb(46 49 55)" : "",
-                  color: mode === "dark" ? "white" : "",
-                }}
-              >
-                <div className="flex justify-center cursor-pointer">
-                  <img
-                    className=" rounded-2xl w-full h-80 p-2 hover:scale-110 transition-scale-110  duration-300 ease-in-out"
-                    src="https://minhkhoipvc.com/wp-content/uploads/2023/09/mang-pe-mau-den-35kg-boc-hang-tai-ha-noi-1.jpg"
-                    alt="pe"
-                  />
-                </div>
-                <div className="p-5">
-                  <h1
-                    className="title-font text-center text-lg font-medium text-gray-900 mb-3"
-                    style={{ color: mode === "dark" ? "white" : "" }}
-                  >
-                    PE Đen
-                  </h1>
-                </div>
-              </div>
-            </Link>
-          </div>
-          {/* item_4 */}
-          <div className="mb-14">
-            <Link to={"/allproducts"}>
-              <div
-                className="h-full rounded-2xl overflow-hidden"
-                style={{
-                  backgroundColor: mode === "dark" ? "rgb(46 49 55)" : "",
-                  color: mode === "dark" ? "white" : "",
-                }}
-              >
-                <div className="flex justify-center cursor-pointer">
-                  <img
-                    className=" rounded-2xl w-full h-80 p-2 hover:scale-110 transition-scale-110  duration-300 ease-in-out"
-                    src="https://bizweb.dktcdn.net/thumb/1024x1024/100/429/571/products/tantaiplastics-com-mang-pe-lot-san-3.jpg?v=1626081495557"
-                    alt="pallet"
-                  />
-                </div>
-                <div className="p-5">
-                  <h1
-                    className="title-font text-center text-lg font-medium text-gray-900 mb-3"
-                    style={{ color: mode === "dark" ? "white" : "" }}
-                  >
-                    PE Trải Sàn
-                  </h1>
-                </div>
-              </div>
-            </Link>
-          </div>
-          {/* item_5 */}
-          <div className="mb-14">
-            <Link to={"/allproducts"}>
-              <div
-                className="h-full rounded-2xl overflow-hidden"
-                style={{
-                  backgroundColor: mode === "dark" ? "rgb(46 49 55)" : "",
-                  color: mode === "dark" ? "white" : "",
-                }}
-              >
-                <div className="flex justify-center cursor-pointer">
-                  <img
-                    className=" rounded-2xl w-full h-80 p-2 hover:scale-110 transition-scale-110  duration-300 ease-in-out"
-                    src="https://tcstar.com.vn/images/stories/virtuemart/product/dm_20230403113227_001.jpg"
-                    alt="dây đai"
-                  />
-                </div>
-                <div className="p-5">
-                  <h1
-                    className="title-font text-center text-lg font-medium text-gray-900 mb-3"
-                    style={{ color: mode === "dark" ? "white" : "" }}
-                  >
-                    PE Xanh
-                  </h1>
-                </div>
-              </div>
-            </Link>
-          </div>
-        </Slider>
-      </div>
-      {/* Màng PE */}
-
       {/* Hỗ Trợ */}
-      <div className="background" ref={bgRef_4}>
+      <div className="background bg-orange-300 hover:bg-orange-200 transition ease-in-out duration-500" ref={bgRef_4}>
         <div className="container mx-auto w-full mb-2 lg:mb-3 mt-14">
           <h1
             className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900"

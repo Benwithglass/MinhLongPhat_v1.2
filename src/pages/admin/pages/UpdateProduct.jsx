@@ -64,9 +64,7 @@ function UpdateProduct() {
             />
           </div>
           <div>
-            <textarea
-              cols="30"
-              rows="10"
+            <input
               name="description"
               value={products.description}
               onChange={(e) =>
@@ -74,7 +72,52 @@ function UpdateProduct() {
               }
               className=" bg-gray-600 mb-4 px-2 py-2 w-full lg:w-[20em] rounded-lg text-white placeholder:text-gray-200 outline-none"
               placeholder="Product description"
-            ></textarea>
+            ></input>
+          </div>
+          <div>
+            <input
+              name="Xuất xứ"
+              value={products.xuatXu}
+              onChange={(e) => setProducts({...products, xuatXu: e.target.value})}
+              className=" bg-gray-600 mb-4 px-2 py-2 w-full lg:w-[20em] rounded-lg text-white placeholder:text-gray-200 outline-none"
+              placeholder="Xuất xứ"
+            ></input>
+          </div>
+          <div>
+            <input
+              name="Khối lượng"
+              value={products.khoiLuong}
+              onChange={(e) => setProducts({...products, khoiLuong: e.target.value})}
+              className=" bg-gray-600 mb-4 px-2 py-2 w-full lg:w-[20em] rounded-lg text-white placeholder:text-gray-200 outline-none"
+              placeholder="Khối lượng"
+            ></input>
+          </div>
+          <div>
+            <input
+              name="Độ dày"
+              value={products.doDay}
+              onChange={(e) => setProducts({...products, doDay: e.target.value})}
+              className=" bg-gray-600 mb-4 px-2 py-2 w-full lg:w-[20em] rounded-lg text-white placeholder:text-gray-200 outline-none"
+              placeholder="Độ dày"
+            ></input>
+          </div>
+          <div>
+            <input
+              name="Chiều rộng"
+              value={products.chieuRong}
+              onChange={(e) => setProducts({...products, chieuRong: e.target.value})}
+              className=" bg-gray-600 mb-4 px-2 py-2 w-full lg:w-[20em] rounded-lg text-white placeholder:text-gray-200 outline-none"
+              placeholder="Chiều rộng"
+            ></input>
+          </div>
+          <div>
+            <input
+              name="Màu sắc"
+              value={products.mauSac}
+              onChange={(e) => setProducts({...products, mauSac: e.target.value})}
+              className=" bg-gray-600 mb-4 px-2 py-2 w-full lg:w-[20em] rounded-lg text-white placeholder:text-gray-200 outline-none"
+              placeholder="Màu sắc"
+            ></input>
           </div>
           <div className=" flex justify-center mb-3">
             <button 

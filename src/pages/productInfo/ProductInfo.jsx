@@ -146,8 +146,20 @@ function ProductInfo() {
                     </a>
                   </span>
                 </div>
-                <p className="leading-relaxed border-b-2 mb-5 pb-5">
-                  {products.description}
+                <p className="leading-relaxed border-b-2 mb-5 pb-5 text-2xl">
+                  <span className="text-gray-700 text-xl">Chiều rộng:</span> {products.chieuRong}
+                </p>
+                <p className="leading-relaxed border-b-2 mb-5 pb-5 text-2xl">
+                  <span className="text-gray-700 text-xl">Độ Dày:</span> {products.doDay}
+                </p>
+                <p className="leading-relaxed border-b-2 mb-5 pb-5 text-2xl">
+                  <span className="text-gray-700 text-xl">Khối Lượng:</span> {products.khoiLuong}
+                </p>
+                <p className="leading-relaxed border-b-2 mb-5 pb-5 text-2xl">
+                <span className="text-gray-700 text-xl">Màu sắc:</span> {products.mauSac}
+                </p>
+                <p className="leading-relaxed border-b-2 mb-5 pb-5 text-2xl">
+                <span className="text-gray-700 text-xl">Liên hệ:</span> 0908-112-096
                 </p>
 
                 {/* <div className="flex">

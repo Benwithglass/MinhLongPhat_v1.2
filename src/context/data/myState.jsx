@@ -32,6 +32,11 @@ function myState(props) {
       imageUrl: null, 
       category: null, 
       description: null, 
+      xuatXu: null,
+      khoiLuong: null, 
+      doDay: null,
+      chieuRong: null,
+      mauSac: null,
       time: Timestamp.now(),
       date: new Date().toLocaleString(
       "en-US",
@@ -46,7 +51,12 @@ function myState(props) {
       if (products.title == null || 
         products.imageUrl == null || 
         products.category == null || 
-        products.description == null
+        products.description == null ||
+        products.xuatXu == null ||
+        products.khoiLuong == null ||
+        products.doDay == null ||
+        products.chieuRong == null ||
+        products. mauSac == null 
         ) {
           return toast.error('Xin hãy điền đầy đủ thông tin.')
         }

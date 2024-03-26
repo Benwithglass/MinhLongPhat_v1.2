@@ -5,10 +5,12 @@ import HeroSection from '../../components/heroSection/HeroSection'
 // import Filter from '../../components/filter/Filter'
 // import ProductCard from '../../components/productCard/ProductCard'
 import Carousel from '../../components/carousel/Carousel'
+import AboutUs from '../../components/aboutUs/AboutUs'
 // import Track from '../../components/track/Track'
 // import Testimonial from '../../components/testimonial/Testimonial'
 // import { useDispatch } from 'react-redux'
 // import { addToCart, deleteFromCart } from '../../redux/cartSlice'
+import './Home.css';
 
 function Home() {
   // const dispatch = useDispatch(); 
@@ -25,6 +27,7 @@ function Home() {
   return (
     <Layout>
       <HeroSection/>
+      <AboutUs/>
       <Carousel/>
       {/* <Filter/>
       <ProductCard/> */}
