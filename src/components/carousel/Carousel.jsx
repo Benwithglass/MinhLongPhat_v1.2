@@ -19,6 +19,44 @@ function Carousel() {
     speed: 500,
     slidesToShow: 5,
     slidesToScroll: 1,
+    responsive: [
+      {breakpoint: 1440, 
+       settings: {
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        dots: true,
+        infinite: true,
+        speed: 500,
+       }
+      },
+      {breakpoint: 1024, 
+        settings: {
+         slidesToShow: 3,
+         slidesToScroll: 1,
+         dots: true,
+         infinite: true,
+         speed: 500,
+        }
+      }, 
+      {breakpoint: 768, 
+        settings: {
+         slidesToShow: 2,
+         slidesToScroll: 1,
+         dots: true,
+         infinite: true,
+         speed: 500,
+        }
+      },
+      {breakpoint: 502, 
+        settings: {
+         slidesToShow: 1,
+         slidesToScroll: 1,
+         dots: true,
+         infinite: true,
+         speed: 500,
+        }
+      },
+    ]
   };
 
   const bgRef_1 = useRef(null);
@@ -91,9 +129,9 @@ function Carousel() {
 
   return (
     <div className=" py-6 md:py-8 mx-auto bg-orange-300 scroll-smooth" >
-      <div className="mx-auto lg:w-fit w-fit mb-2 lg:mb-10">
+      <div className="mx-auto lg:w-fit w-fit mb-2 lg:mb-2">
         <h1
-          className="sm:text-5xl text-2xl text-center font-medium title-font mb-2 text-gray-700"
+          className="sm:text-3xl text-2xl underline text-center font-medium title-font mb-2 text-gray-700"
           style={{ color: mode === "dark" ? "white" : "" }}
         >
           Các Dòng Sản Phẩm Hiện Có:
@@ -101,7 +139,7 @@ function Carousel() {
       </div>
       {/* Dây Đai */}
       <div className="background bg-orange-300 hover:bg-orange-200 transition ease-in-out duration-500 pt-10" ref={bgRef_1} id="daydai">
-        <div className="container mx-auto w-full mb-2 lg:mb-3 ">
+        <div className="container mx-auto mb-2 lg:mb-3">
           <h1
             className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900"
             style={{ color: mode === "dark" ? "white" : "" }}
@@ -110,9 +148,9 @@ function Carousel() {
           </h1>
           <div className="h-1 w-20 bg-pink-600 rounded"></div>
         </div>
-        <Slider {...settings} className="container mx-auto">
+        <Slider {...settings} className=" container mx-auto">
           {/* item_1 */}
-          <div className="mb-14 ">
+          <div className="mb-14">
             <Link to={"/allproducts"}>
               <div
                 className="h-full rounded-2xl overflow-hidden mr-5"

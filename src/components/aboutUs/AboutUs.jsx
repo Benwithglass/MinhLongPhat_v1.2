@@ -29,6 +29,14 @@ function AboutUs() {
     }})
   }, []);
 
+  const aRef_add1 = useRef(null);
+  useEffect(() => {
+    const m = aRef_add1.current;
+    gsap.fromTo(m, {opacity: 0, x: 100}, {opacity: 1, x: 0, ease: "power4.inOut", duration: 2, delay: 0.8, scrollTrigger: {
+      trigger: m
+    }})
+  }, []);
+
   const aRef_3 = useRef(null);
   useEffect(() => {
     const c = aRef_3.current;
@@ -65,7 +73,7 @@ function AboutUs() {
     <main className="scroll-smooth" id="vechungtoi">
       <div className="upper" >
         <div className="left" ref={aRef_1}>
-          <h1>Về Chúng Tôi.</h1>
+          <h1 className="underline">Về Chúng Tôi.</h1>
           <p>
             <span>Minh Long Phat </span>
             là đơn vị hàng đầu trong việc cung cấp giải pháp đóng gói cho ngành
@@ -74,7 +82,7 @@ function AboutUs() {
             an toàn cho hàng hóa mà còn đáp ứng các yêu cầu về tiêu chuẩn và
             thông số kỹ thuật.
             <br />
-            <h2> Các sản phẩm và dịch vụ của chúng tôi bao gồm:</h2>
+            
           </p>
         </div>
         <div className="right" ref={aRef_2}>
@@ -83,6 +91,9 @@ function AboutUs() {
             alt=""
           />
         </div>
+      </div>
+      <div className="mid" ref={aRef_add1}>
+        <h2> Các sản phẩm và dịch vụ của chúng tôi bao gồm:</h2>
       </div>
       <div className="lower">
         <div className="left">
